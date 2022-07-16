@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forEach Method</title>
+    <link rel="stylesheet" href="/style/method.css">
+    <link rel="stylesheet" href="/style/footer.css">
+</head>
+<body>
+    <h1>forEach method in JavaScript</h1>
+    <ul>
+        <li>The arr.forEach() method calls the provided function once for each element of the array.
+            The provided function may perform any kind of
+            operation on the elements of the given array.
+        </li>
+        <code>Syntax: array.forEach(
+            callback(element, index, arr),
+            thisValue
+            )
+        </code>
+        <li>Let's implement forEach method without using inbuilt function
+            to find the square of array elements :</li>
+    </ul>
+    <code>arr = [7,8,9,12,23]</code><br>
+    <button onclick="fun()">Click Here</button><br>
+    <code id="root"></code>
+    <footer>
+        <p>Made by : Sejal Srivastava</p>
+    </footer>
+    <script>
+        let ans=document.getElementById('root');
+        var arr=[7,8,9,12,23];
+        var newArr = [];
+        for(let i=0;i<arr.length;i++){
+             newArr.push({value : arr[i] , square : arr[i]*arr[i]});
+        }
+        function fun(){
+              root.innerHTML=JSON.stringify(newArr);
+        }
+
+    </script>
+</body>
+</html>

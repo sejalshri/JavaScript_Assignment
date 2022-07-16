@@ -1,0 +1,43 @@
+body{
+	background-color: #1A1A1D;
+	text-align: center;
+	color: white;
+}
+h1{
+    color: #950740;
+}
+li{
+    text-align:left;
+}
+li,code,#root{
+    margin:20px;
+    font-size:26px;
+}
+button{
+	width: 20%;
+	padding: 15px;
+	background-color: #dcdcdc;
+	margin: 15px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom:5px solid #950740;
+}
+button:hover{
+	color: white;
+	background-color: #950740;
+	border-radius: 25px;
+	outline: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+	button{
+		width: 80%;
+		font-size: 16px;
+		padding: 10px;
+	}
+	li,code,#root{
+	    font-size:23px;
+	}
+}

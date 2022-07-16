@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map function</title>
+    <link rel="stylesheet" href="/style/method.css">
+    <link rel="stylesheet" href="/style/footer.css">
+</head>
+<body>
+    <h1>Map method in JavaScript</h1>
+
+    <ul>
+        <li>map() method is used to iterate over an array and
+            calling function on every element of array.</li>
+        <code>Syntax: array.map(function(currentValue, index, arr), thisValue)</code>
+        <li>Let's implement map method without using inbuilt function
+            to find the character count of given array :</li>
+    </ul>
+    <code>arr = ["Banana" , "Orange" , "Apple" , "Grapes"]</code><br>
+    <button onclick="fun()">Click Here</button><br>
+    <code id="root"></code>
+    <footer>
+        <p>Made by : Sejal Srivastava</p>
+    </footer>
+    <script>
+        let ans=document.getElementById('root');
+        var arr=["Banana","Orange","Apple","Grapes"];
+        var newArr=[];
+        for(let i=0;i<arr.length;i++){
+             newArr.push({key:arr[i], Character_count:arr[i].length});
+        }
+        function fun(){
+              root.innerHTML=JSON.stringify(newArr);
+        }
+        console.log(newArr);
+
+    </script>
+</body>
+</html>

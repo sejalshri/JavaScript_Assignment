@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reduce Method</title>
+    <link rel="stylesheet" href="/style/method.css">
+    <link rel="stylesheet" href="/style/footer.css">
+</head>
+<body>
+    <h1>Reduce method in JavaScript</h1>
+    <ul>
+        <li>The arr.reduce() method in JavaScript is used to reduce the array to a single
+            value and executes a provided function for each
+            value of the array (from left-to-right) and the return value of the
+            function is stored in an accumulator.</li>
+        <code>Syntax: array.reduce( function(total, currentValue, currentIndex, arr),
+            initialValue )</code>
+        <li>Let's implement reduce method without using inbuilt function
+            to find the sum of array elements :</li>
+    </ul>
+    <code>arr = [23,7,8,9,12,23,45,77]</code><br>
+    <button onclick="fun()">Click Here</button><br>
+    <code id="root"></code>
+    <footer>
+        <p>Made by : Sejal Srivastava</p>
+    </footer>
+    <script>
+            let ans=document.getElementById('root');
+            var arr=[23,7,8,9,12,23,45,77];
+            var sum = 0
+            for(let i=0;i<arr.length;i++){
+                 sum+=arr[i]
+            }
+            function fun(){
+                  root.innerHTML="Sum of array elements = " + sum;
+            }
+
+    </script>
+
+</body>
+</html>
